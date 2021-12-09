@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.wdwelle.models.Dojo;
+import com.wdwelle.models.Ninja;
 
-public interface NinjaRepository extends CrudRepository<Dojo> {
-		List<Dojo> findAll();
+public interface NinjaRepository extends CrudRepository<Ninja, Long> {
+		List<Ninja> findAll();
 }
