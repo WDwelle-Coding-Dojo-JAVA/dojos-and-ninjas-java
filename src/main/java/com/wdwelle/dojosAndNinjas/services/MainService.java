@@ -1,14 +1,15 @@
-package com.wdwelle.services;
+package com.wdwelle.dojosAndNinjas.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.wdwelle.models.Dojo;
-import com.wdwelle.models.Ninja;
-import com.wdwelle.repositories.DojoRepository;
-import com.wdwelle.repositories.NinjaRepository;
-
+import com.wdwelle.dojosAndNinjas.models.Dojo;
+import com.wdwelle.dojosAndNinjas.models.Ninja;
+import com.wdwelle.dojosAndNinjas.repositories.DojoRepository;
+import com.wdwelle.dojosAndNinjas.repositories.NinjaRepository;
+@Service
 public class MainService {
 	@Autowired
 	NinjaRepository ninjaRepo;

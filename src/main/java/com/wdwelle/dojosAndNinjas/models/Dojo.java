@@ -1,4 +1,4 @@
-package com.wdwelle.models;
+package com.wdwelle.dojosAndNinjas.models;
 
 import java.util.Date;
 import java.util.List;

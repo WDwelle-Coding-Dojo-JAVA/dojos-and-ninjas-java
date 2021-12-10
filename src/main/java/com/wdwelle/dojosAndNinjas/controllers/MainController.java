@@ -1,4 +1,4 @@
-package com.wdwelle.controllers;
+package com.wdwelle.dojosAndNinjas.controllers;
 
 import javax.validation.Valid;
 
@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.wdwelle.models.Dojo;
-import com.wdwelle.services.MainService;
-
+import com.wdwelle.dojosAndNinjas.models.Dojo;
+import com.wdwelle.dojosAndNinjas.services.MainService;
 @Controller
 public class MainController {
 	@Autowired
@@ -19,7 +18,7 @@ public class MainController {
 	
 	@GetMapping("/dojos/new")
 	public String newDojo(@ModelAttribute("dojo")Dojo dojo) {
-		return "newDojo";
+		return "index.jsp";
 	}
 	
 	@PostMapping("/dojos/add")

@@ -18,6 +18,6 @@
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-   
+   <p>Hello World</p>
 </body>
 </html>
